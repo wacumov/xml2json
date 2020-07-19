@@ -18,7 +18,8 @@ let package = Package(
             path: "./include"),
         .target(
             name: "xml2json",
-            dependencies: ["xml2json_cpp"])
+            dependencies: ["xml2json_cpp"]),
+        .testTarget(name: "xml2jsonTests", dependencies: ["xml2json"])
     ],
     cLanguageStandard: .c11,
     cxxLanguageStandard: .cxx11
