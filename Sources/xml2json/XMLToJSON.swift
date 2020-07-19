@@ -3,12 +3,9 @@ import xml2json_cpp
 public struct XMLToJSON {
     
     public static func convert(_ xmlString: String) -> String? {
-        let jsonString = xmlString.withCString {
-            convertToJSON($0)
-        }
-        guard let cString = jsonString else {
+        guard let jsonString = convertToJSON(xmlString) else {
             return nil
         }
-        return String(cString: cString)
+        return String(cString: jsonString)
     }
 }
