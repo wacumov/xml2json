@@ -6,11 +6,8 @@ let package = Package(
     name: "xml2json",
     products: [
         .library(
-            name: "xml2json_cpp",
-            targets: ["xml2json_cpp"]),
-        .library(
             name: "xml2json",
-            targets: ["xml2json"]),
+            targets: ["xml2json"])
     ],
     dependencies: [
     ],
