@@ -11,3 +11,12 @@
 *.lai
 *.la
 *.a
+
+# Swift Package
+.DS_Store
+/.build
+/.swiftpm
+/Packages
+/*.xcodeproj
+xcuserdata/
+
